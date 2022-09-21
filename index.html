@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time table</title>
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        .main{
+            display: flex;
+            justify-content: row;
+        }
+        img{
+            padding: 3rem 4rem;
+            /* width: 2rem; */
+            /* height: 2rem; */
+            cursor: pointer;
+        }
+        img:hover{
+            opacity: 0.7;
+        }
+
+        .img1{
+                flex: 1;
+            
+            }
+        .img2{
+            /* flex:1 ; */
+        }
+        p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-transform: capitalize;
+        text-decoration: underline;
+        /* text-decoration; */
+        font-size: 2rem;
+        font-weight: 600;
+        color: lightsalmon;
+        }
+        .m{
+            font-size: 1.5rem;
+            font-weight: 500;
+            color: orange;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            flex: 1;
+            display: none;
+        }
+        .w{
+            position: absolute;
+            display: none;
+            margin-left: 2rem;
+            font-size: 1.5rem;
+            margin-left: 62rem;
+            font-weight: 500;
+            color: orange;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main1{
+            display: flex;
+            justify-content: roww;
+        }
+
+        .m  tr td{
+            margin-top: 1rem;
+            padding: 1rem 1rem;
+        }
+         .m select{
+            text-align: center;
+            border: 1px solid gray;
+            width:5rem;
+            cursor: pointer;
+            background-color: aliceblue;
+
+
+         }
+         .m section option{
+            cursor: pointer;
+            /* padding: 1rem 0rem; */
+         }
+
+
+
+         
+        .w  tr td{
+          margin-top: 1rem;
+            padding: 1rem 1rem;
+        }
+         .w select{
+            text-align: center;
+            border: 1px solid gray;
+            width:5rem;
+            cursor: pointer;
+            background-color: aliceblue;
+
+
+         }
+         .w section option{
+            cursor: pointer;
+            /* padding: 1rem 0rem; */
+         }
+
+         .main p1{
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.4rem;
+            /* text-align: ce   nter; */
+            /* padding-left:5rem ; */
+            margin-left: -17rem;
+         }
+         .main p2{
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 1.4rem;
+width: 20rem;
+/* text-align: ce   nter; */
+/* padding-left:5rem ; */
+margin-left: -17rem;
+margin-top: 19rem;
+position:absolute;
+}
+    </style>
+</head>
+<body>
+    <p>Time Table </p>
+    <div class="main">
+        <div class="img1" onclick="man()"><img src="mm.png"><p1>Click here (Man)</p1></div>
+        <div class="img2" onclick="woman()"><img src="w.png" alt="" srcset="">        <p2>Click here (Women)  </p2>
+        </div>
+    </div>
+    <div class="main1">
+    <div class="m">
+      <table>
+        <tr><td>SET WEAK UP TIME<span></td><td><select name="" id="s">
+        <option value="">1AM</option>
+        <option value="">2AM</option>
+        <option value="">3AM</option>
+        <option value="">4AM</option>
+        <option value="">5AM</option>
+        <option value="">6AM</option>
+        <option value="">7AM</option>
+        <option value="">8AM</option>
+        <option value="">9AM</option>
+        <option value="">10AM</option>
+        <option value="">11AM</option>
+        <option value="">12AM</option>
+        <option value="">1PM</option>
+        <option value="">2PM</option>
+        <option value="">3PM</option>
+        <option value="">4PM</option>
+        <option value="">5PM</option>
+        <option value="">6PM</option>
+        <option value="">7PM</option>
+        <option value="">8PM</option>
+        <option value="">9PM</option>
+        <option value="">10PM</option>
+        <option value="">11PM</option>
+        <option value="">12PM</option>
+    </select></span><br></td>
+    <tr><td>
+    SET LUNCH TIME</td><td> <span>
+        <select name="" id="">
+            <option value="">1AM</option>
+            <option value="">2AM</option>
+            <option value="">3AM</option>
+            <option value="">4AM</option>
+            <option value="">5AM</option>
+            <option value="">6AM</option>
+            <option value="">7AM</option>
+            <option value="">8AM</option>
+            <option value="">9AM</option>
+            <option value="">10AM</option>
+            <option value="">11AM</option>
+            <option value="">12AM</option>
+            <option value="">1PM</option>
+            <option value="">2PM</option>
+            <option value="">3PM</option>
+            <option value="">4PM</option>
+            <option value="">5PM</option>
+            <option value="">6PM</option>
+            <option value="">7PM</option>
+            <option value="">8PM</option>
+            <option value="">9PM</option>
+            <option value="">10PM</option>
+            <option value="">11PM</option>
+            <option value="">12PM</option>
+        </select>
+
+    </span><br></td></tr>
+    <tr> <td> SET NAP TIME</td><td><span>
+        <select name="" id="">
+            <option value="">1AM</option>
+            <option value="">2AM</option>
+            <option value="">3AM</option>
+            <option value="">4AM</option>
+            <option value="">5AM</option>
+            <option value="">6AM</option>
+            <option value="">7AM</option>
+            <option value="">8AM</option>
+            <option value="">9AM</option>
+            <option value="">10AM</option>
+            <option value="">11AM</option>
+            <option value="">12AM</option>
+            <option value="">1PM</option>
+            <option value="">2PM</option>
+            <option value="">3PM</option>
+            <option value="">4PM</option>
+            <option value="">5PM</option>
+            <option value="">6PM</option>
+            <option value="">7PM</option>
+            <option value="">8PM</option>
+            <option value="">9PM</option>
+            <option value="">10PM</option>
+            <option value="">11PM</option>
+            <option value="">12PM</option>
+        </select>
+    </span>
+    </td></tr>
+</table>  
+</div>
+<div class="w">
+    <table>
+      <tr><td>SET WEAK UP TIME<span></td><td><select name="" id="s">
+      <option value="">1AM</option>
+      <option value="">2AM</option>
+      <option value="">3AM</option>
+      <option value="">4AM</option>
+      <option value="">5AM</option>
+      <option value="">6AM</option>
+      <option value="">7AM</option>
+      <option value="">8AM</option>
+      <option value="">9AM</option>
+      <option value="">10AM</option>
+      <option value="">11AM</option>
+      <option value="">12AM</option>
+      <option value="">1PM</option>
+      <option value="">2PM</option>
+      <option value="">3PM</option>
+      <option value="">4PM</option>
+      <option value="">5PM</option>
+      <option value="">6PM</option>
+      <option value="">7PM</option>
+      <option value="">8PM</option>
+      <option value="">9PM</option>
+      <option value="">10PM</option>
+      <option value="">11PM</option>
+      <option value="">12PM</option>
+  </select></span><br></td>
+  <tr><td>
+  SET LUNCH TIMEs</td><td> <span>
+      <select name="" id="">
+          <option value="">1AM</option>
+          <option value="">2AM</option>
+          <option value="">3AM</option>
+          <option value="">4AM</option>
+          <option value="">5AM</option>
+          <option value="">6AM</option>
+          <option value="">7AM</option>
+          <option value="">8AM</option>
+          <option value="">9AM</option>
+          <option value="">10AM</option>
+          <option value="">11AM</option>
+          <option value="">12AM</option>
+          <option value="">1PM</option>
+          <option value="">2PM</option>
+          <option value="">3PM</option>
+          <option value="">4PM</option>
+          <option value="">5PM</option>
+          <option value="">6PM</option>
+          <option value="">7PM</option>
+          <option value="">8PM</option>
+          <option value="">9PM</option>
+          <option value="">10PM</option>
+          <option value="">11PM</option>
+          <option value="">12PM</option>
+      </select>
+
+  </span><br></td></tr>
+  <tr> <td> SET NAP TIME</td><td><span>
+      <select name="" id="">
+          <option value="">1AM</option>
+          <option value="">2AM</option>
+          <option value="">3AM</option>
+          <option value="">4AM</option>
+          <option value="">5AM</option>
+          <option value="">6AM</option>
+          <option value="">7AM</option>
+          <option value="">8AM</option>
+          <option value="">9AM</option>
+          <option value="">10AM</option>
+          <option value="">11AM</option>
+          <option value="">12AM</option>
+          <option value="">1PM</option>
+          <option value="">2PM</option>
+          <option value="">3PM</option>
+          <option value="">4PM</option>
+          <option value="">5PM</option>
+          <option value="">6PM</option>
+          <option value="">7PM</option>
+          <option value="">8PM</option>
+          <option value="">9PM</option>
+          <option value="">10PM</option>
+          <option value="">11PM</option>
+          <option value="">12PM</option>
+      </select>
+  </span>
+  </td></tr>
+</table>  
+</div>
+    </div>
+
+<script>
+function man(){
+    
+    document.querySelector(".m").style.display="block";
+    document.querySelector(".w").style.display="none";   
+}
+function woman(){
+    document.querySelector(".w").style.display="block";
+    document.querySelector(".m").style.display="none";
+;}
+
+</script>
+</body>
+</html>
